@@ -12,4 +12,12 @@ defmodule Burritinator.Burritos.Test.Commands.CreateBurritoTest do
 
     assert result.name == "burrito"
   end
+
+  test "should not create a burrito without a name" do
+    burrito = %{}
+
+    {:error, error} = CreateBurrito.execute(burrito)
+
+    assert error.errors == [name: {"can't be blank", [validation: :required]}]
+  end
 end
