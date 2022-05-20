@@ -7,6 +7,14 @@ config :api, Burritinator.ApiWeb.Endpoint,
   secret_key_base: "Z4zNL447F1SDzYPrLCt3FPu/8UnRLsldB6OOuMtO+ZheJ0YSHXDXKe0YPaEqdM81",
   server: false
 
+config :database, Burritinator.Database.Repo,
+  database: "postgres_test",
+  username: "postgres_test",
+  password: "postgres_test",
+  hostname: "localhost",
+  port: 45432
+
+
 # Print only warnings and errors during test
 config :logger, level: :warn
 

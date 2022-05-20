@@ -8,10 +8,13 @@
 import Config
 
 config :database, Burritinator.Database.Repo,
-  database: "database_repo",
-  username: "user",
-  password: "pass",
-  hostname: "localhost"
+  database: "postgres",
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost",
+  port: 55432
+
+config :database, ecto_repos: [Burritinator.Database.Repo]
 
 config :api,
   namespace: Burritinator.Api
