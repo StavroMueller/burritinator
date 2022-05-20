@@ -11,6 +11,4 @@ defmodule Burritinator.ApiWeb.Router do
     forward "/graphiql", Absinthe.Plug.GraphiQL, schema: Burritinator.GraphQl.Schema
     forward "/graphql", Absinthe.Plug, schema: Burritinator.GraphQl.Schema
   end
-
-
 end
