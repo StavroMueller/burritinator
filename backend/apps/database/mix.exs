@@ -10,6 +10,7 @@ defmodule Burritinator.Database.MixProject do
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
       elixir: "~> 1.13",
+      elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -34,4 +35,7 @@ defmodule Burritinator.Database.MixProject do
       {:ex_machina, "~> 2.7.0"}
     ]
   end
+
+  defp elixirc_paths(env) when env in [:test], do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
 end

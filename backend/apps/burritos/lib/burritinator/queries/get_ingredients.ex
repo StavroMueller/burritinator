@@ -3,6 +3,6 @@ defmodule Burritinator.Burritos.Queries.GetIngredients do
   Get a list of all ngredients
   """
   def run() do
-   {:ok, []}
+    {:ok, []}
   end
 end

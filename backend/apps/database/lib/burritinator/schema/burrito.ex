@@ -13,6 +13,8 @@ defmodule Burritinator.Database.Schema.Burrito do
 
   schema "burritos" do
     field(:name, :string)
+
+    timestamps()
   end
 
   def changeset(model = %Burrito{}, attrs \\ %{}) do

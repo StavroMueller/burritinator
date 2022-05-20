@@ -10,6 +10,7 @@ defmodule Burritinator.Database.Application do
     children = [
       # Starts a worker by calling: Burritinator.Database.Worker.start_link(arg)
       # {Burritinator.Database.Worker, arg}
+      Burritinator.Database.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

@@ -12,7 +12,8 @@ config :database, Burritinator.Database.Repo,
   username: "postgres_test",
   password: "postgres_test",
   hostname: "localhost",
-  port: 45432
+  port: 45432,
+  pool: Ecto.Adapters.SQL.Sandbox
 
 
 # Print only warnings and errors during test
