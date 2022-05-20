@@ -1,24 +1,24 @@
 # The directory Mix will write compiled artifacts to.
-backend/_build/*
+/backend/_build/
 
 # If you run "mix test --cover", coverage assets end up here.
-backend/cover/
+/backend/cover/
 
 # The directory Mix downloads your dependencies sources to.
-backend/deps/
+/backend/deps/
 
 # Where third-party dependencies like ExDoc output generated docs.
-backend/doc/
+/backend/doc/
 
 # Ignore .fetch files in case you like to edit your project deps locally.
-backend/.fetch
+/backend/.fetch
 
 # If the VM crashes, it generates a dump, let's ignore it too.
-backend/erl_crash.dump
+/backend/erl_crash.dump
 
 # Also ignore archive artifacts (built via "mix archive.build").
-backend/*.ez
+/backend/*.ez
 
 # Temporary files, for example, from tests.
-backend/tmp/
+/backend/tmp/
 

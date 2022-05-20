@@ -5,7 +5,12 @@ defmodule Burritinator.ApiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", Burritinator.ApiWeb do
+  scope "/api" do
     pipe_through :api
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: Burritinator.GraphQl.Schema
+    forward "/graphql", Absinthe.Plug, schema: Burritinator.GraphQl.Schema
   end
+
+
 end
