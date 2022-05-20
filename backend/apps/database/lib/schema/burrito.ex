@@ -15,7 +15,7 @@ defmodule Burritinator.Database.Schema.Burrito do
     field(:name, :string)
   end
 
-  def changeset(model=%Burrito{}, attrs \\ %{}) do
+  def changeset(model = %Burrito{}, attrs \\ %{}) do
     model
     |> cast(attrs, @required_params ++ @optional_params)
     |> validate_required(@required_params)
