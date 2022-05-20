@@ -7,6 +7,12 @@
 # General application configuration
 import Config
 
+config :database, Burritinator.Database.Repo,
+  database: "database_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
+
 config :api,
   namespace: Burritinator.Api
 
