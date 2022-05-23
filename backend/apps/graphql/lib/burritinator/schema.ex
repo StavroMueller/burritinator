@@ -5,13 +5,14 @@ defmodule Burritinator.GraphQl.Schema do
 
   use Absinthe.Schema
 
-  #alias Burritinator.GraphQl.Resolvers.Burritos
+  alias Burritinator.GraphQl.Resolvers.Burritos
 
-  #import_types()
+  import_types(Burritinator.GraphQl.Schema.Burrito)
 
   query do
-  end
-
-  mutation do
+    @desc "Get a list of burritos"
+    field :burritos, list_of(:burrito) do
+      resolve(&Burritos.get_burritos/3)
+    end
   end
 end

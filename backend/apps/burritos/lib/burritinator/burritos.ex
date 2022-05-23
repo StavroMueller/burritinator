@@ -1,18 +1,11 @@
 defmodule Burritinator.Burritos do
   @moduledoc """
-  Documentation for `Burritinator.Burritos`.
+  Main burritos module
   """
 
-  @doc """
-  Hello world.
+  alias Burritinator.Burritos.Queries.GetBurritos
 
-  ## Examples
-
-      iex> Burritinator.Burritos.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def get_burritos() do
+    GetBurritos.run()
   end
 end

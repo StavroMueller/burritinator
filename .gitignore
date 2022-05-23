@@ -22,3 +22,5 @@ _build/
 # Temporary files, for example, from tests.
 /backend/tmp/
 
+*.swp
+*.swo
