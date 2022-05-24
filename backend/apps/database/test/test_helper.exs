@@ -1,2 +1,2 @@
-Ecto.Adapters.SQL.Sandbox.mode(Burritinator.Datbase.Repo, :auto)
+Ecto.Adapters.SQL.Sandbox.mode(Burritinator.Database.Repo, :auto)
 ExUnit.start()

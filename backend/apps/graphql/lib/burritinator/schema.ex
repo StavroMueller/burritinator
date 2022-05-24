@@ -15,4 +15,12 @@ defmodule Burritinator.GraphQl.Schema do
       resolve(&Burritos.get_burritos/3)
     end
   end
+
+  mutation do
+    @desc "Create a burrito"
+    field :create_burrito, type: :burrito do
+      arg(:name, non_null(:string))
+      resolve(&Burritos.get_burritos/3)
+    end
+  end
 end

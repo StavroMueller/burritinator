@@ -3,6 +3,6 @@ defmodule Burritinator.BurritosTest do
   doctest Burritinator.Burritos
 
   test "greets the world" do
-    assert Burritinator.Burritos.hello() == :world
+    :ok
   end
 end
